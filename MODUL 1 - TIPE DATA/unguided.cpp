@@ -89,7 +89,7 @@ int main()
     cout << "5. Farid    : " << nilai [4] << endl;
     return 0;
 }*/
-#include <iostream>
+/*#include <iostream>
 #include <map>
 using namespace std;
 int main()
@@ -111,5 +111,5 @@ int main()
         cout<< "-> "<<entry.first<<" umur : "<<entry.second<<endl;
     }
     return 0;
-}
+}*/
 
