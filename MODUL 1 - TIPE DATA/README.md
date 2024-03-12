@@ -203,7 +203,7 @@ return 0;
 ```
 [Output Program 1]
 
-![OUTPUT NO 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/75ab248f-16fd-43f4-a4ca-2f87cece121a)
+![OUTPUT NO 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/06427f4a-a8b6-4b3a-9fe2-02ea5010e252)
 
 [Kesimpulan Nomor 1]
 
@@ -247,7 +247,8 @@ int main ()
 ```
 [Output Program]
 
-![OUTPUT NO 2 STRUCT](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/8b81b04e-95ee-4804-9f79-e184f920c8f9)
+![OUTPUT NO 2 STRUCT](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/6e14e96d-23eb-4aea-9b8b-5b2328f4d141)
+
 
 [Contoh Program CLASS]
 ```C++
@@ -274,7 +275,8 @@ int main ()
 ```
 [Output Program]
 
-![OUTPUT NO2 CLASS](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/b6aa1a64-1a02-4061-978b-3b2d8ee51908)
+![OUTPUT NO2 CLASS](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/d0589bc8-ea7d-4066-b88e-da29c9470d4b)
+
 
 ## 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
 
@@ -305,7 +307,8 @@ int main()
 }
 ```
 [Output Program]
-![OUTPUT NO 3](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/3510c6c1-98b2-408c-ba23-5285150043a5)
+
+![OUTPUT NO 3](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/713137c1-ef78-46a6-a88d-9095aee7b9c6)
 
 [Perbedaan Array dan Map]
 
