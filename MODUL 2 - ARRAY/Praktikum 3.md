@@ -87,56 +87,51 @@ int arr [2][4][4][3][3];
 ### 1. Program Input Array Tiga Dimensi
 
 ```C++
-#include <iostream>
+#include<iostream>
 using namespace std;
-// PROGRAM INPUT ARRAY 3 DIMENSI
-int main()
+//Program input array 3 dimensi
+int main ()
 {
-// Deklarasi array
-int arr[2][3][3];
-// Input elemen
-for (int x = 0; x < 2; x++)
-{
-for (int y = 0; y < 3; y++)
-{
-for (int z = 0; z < 3; z++)
-{
-cout << "Input Array[" << x << "][" << y << "][" << z <<
-
-"] = ";
-
-cin >> arr[x][y][z];
-}
-}
-cout << endl;
-}
-// Output Array
-for (int x = 0; x < 2; x++)
-{
-for (int y = 0; y < 3; y++)
-{
-for (int z = 0; z < 3; z++)
-{
-cout << "Data Array[" << x << "][" << y << "][" << z <<
-
-"] = " << arr[x][y][z] << endl;
-}
-}
-}
-cout << endl;
-// Tampilan array
-for (int x = 0; x < 2; x++)
-{
-for (int y = 0; y < 3; y++)
-{
-for (int z = 0; z < 3; z++)
-{
-cout << arr[x][y][z] << ends;
-}
-cout << endl;
-}
-cout << endl;
-}
+    //deklarasi array
+    int arr[2][3][3];
+    //input elemen
+    for(int x = 0; x < 2; x++)
+    {
+        for(int y = 0; y < 3; y++)
+        {
+            for(int z = 0; z < 3; z++)
+            {
+                cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";
+                cin >> arr [x][y][z];
+            }
+        }
+        cout << endl;
+    }
+    //output array
+    for(int x = 0; x < 2; x++)
+    {
+        for(int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << " Data Array ["<< x << "]["<< y <<"][" << z <<"] = " << arr [x][y][z] << endl;
+            }
+        }
+    }
+    cout << endl;
+    //tampilkan array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << arr [x] [y] [z] << ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
 }
 ```
 Kode di atas digunakan untuk menginput array sesuai dengan banyak yang telah ditentukan, kemudian akan ditampilkan seperti matriks
@@ -148,31 +143,30 @@ Kode di atas digunakan untuk menginput array sesuai dengan banyak yang telah dit
 
 ### 2. Program Mencari Nilai Maksimal Pada Array
 ```C++
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
-int maks, a, i = 1, lokasi;
-cout << "Masukkan panjang array: ";
-cin >> a;
-int array[a];
-cout << "Masukkan " << a << " angka\n";
-for (i = 0; i < a; i++)
-{
-cout << "Array ke-" << (i) << ": ";
-cin >> array[i];
-}
-maks = array[0];
-for (i = 0; i < a; i++)
-{
-if (array[i] > maks)
-{
-maks = array[i];
-lokasi = i;
-}
-}
-cout << "Nilai maksimum adalah " << maks << " berada di Array
-ke " << lokasi << endl;
+int main ()
+{   int a;
+    int maks, i = 1, lokasi;
+    cout << "Masukan Panjang Array : ";
+    cin >> a;
+    int array[a];
+    cout << "Masukan " << a << " angka \n";
+    for (i = 0; i < a; i++)
+    {
+        cout << "Array ke- "<< (i) << ": ";
+        cin >> array[i];
+    }
+    maks = array[0];
+    for (i = 0; i < a; i++)
+    {
+        if (array[i] > maks)
+        {
+            maks = array[i];
+            lokasi = i;
+        }
+    }
+    cout << "Nilai Maksimum adalah " << maks << " berada di Array ke "<< lokasi << endl;
 }
 ```
 Kode di atas berfungsi untuk menginputkan jumlah array kemudian menginputkan angka sesuai jumlah array atau index yang telah
@@ -184,149 +178,35 @@ di inputkan oleh user. Setelah itu program akan mencari nilai maksimum dari bany
 ## Unguided 
    [Soal]
    
-## 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
+## 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
+[Gambar Soal]
+
+![Screenshot (166)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/5be91f8f-5398-4a30-9b6b-6d5ffb16d4d3)
 
 [Contoh Program]
 ```C++
-#include <iostream>
-using namespace std;
-int s;
 
-int hitung_keliling(int s){
-return 4*s;
-}
-int hitung_luas(int s){
-return s*s;
-}
-int main (){
-cout<<"Masukan Panjang Sisi: ";
-cin>>s;
-
-cout<<"Keliling : "<<hitung_keliling(s)<<endl;
-cout<<"Luas : "<<hitung_luas(s);
-
-return 0;
-}
 ```
 [Output Program 1]
 
-![OUTPUT NO 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/06427f4a-a8b6-4b3a-9fe2-02ea5010e252)
 
-[Kesimpulan Nomor 1]
-
-Dari program diatas dapat disimpulkan bahwa, program diatas dinamakan fungsi. Dalam fungsi tersebut terdapat Tipe Data Primitif
-yaitu "int" yang digunakan untuk mendeklarasikan angka dan kemudian dicetak menggunakan fungsi yang telah ditentukan.
-Jadi kesimpulannya, fungsi dan tipe data primitif adalah komponen yang saling berkesinambungan.
-
-## 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya.
+## 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
    
-[Fungsi class dan struct]
-
-adalah untuk memudahkan user untuk mengelola data yang memiliki struktur sama. Dengan struct dan class kita tidak perlu mendeklarasikan
-variabel terlalu banyak. Keduanya juga berfungsi untuk membungkus data didalamnya sebagai anggota, yang membedakan yakni struct memiliki
-akses yang bersifat private, sedangkan class bersifat public.
-
-[Contoh Program STRUCT ]
+[Contoh Program]
 ```C++
-#include<stdio.h>
 
-struct datamahasiswa
-{
-    const char *nama;
-    const char *alamat;
-    int umur;
-};
-
-int main ()
-{
-    struct datamahasiswa mhs;
-    mhs.nama = "Dewi";
-    mhs.alamat = "Cilacap";
-    mhs.umur = 17;
-
-    printf("## DATA MAHASISWA ##\n");
-    printf("Nama   : %s\n",mhs.nama);
-    printf("Alamat : %s\n",mhs.alamat);
-    printf("Umur   : %d\n",mhs.umur);
-
-    return 0;
-}
 ```
 [Output Program]
 
-![OUTPUT NO 2 STRUCT](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/6e14e96d-23eb-4aea-9b8b-5b2328f4d141)
+## 3.Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
+[CONTOH PROGRAM]
 
-[Contoh Program CLASS]
-```C++
-#include<iostream>
-using namespace std;
-class mahasiswa{
-    public :
-    string nama;
-    string kelas;
-    float nilai;
-    void printdata(){
-        cout << "Nama  : " << nama << endl;
-        cout << "Kelas : " << kelas << endl;
-        cout << "IPK   : " << nilai << endl;
-
-    }
-};
-int main ()
-{
-    mahasiswa Arvel = {"Arvel Mahsa Athallah F ", "IF XI E", 3.85};
-    Arvel.printdata();
-    return 0;
-}
-```
 [Output Program]
 
-![OUTPUT NO2 CLASS](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/d0589bc8-ea7d-4066-b88e-da29c9470d4b)
-
-
-## 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
-
-[CONTOH PROGRAM DENGAN MAP]
-```C++
-#include <iostream>
-#include <map>
-using namespace std;
-int main()
-{
-    // insialisasi dan deklarasi map
-    map<string, int> umursiswa;
-
-    // isi value map
-    umursiswa["Arkhan"] = 19;
-    umursiswa["Kinara"] = 17;
-    umursiswa["Rocky"] = 18;
-    umursiswa["Fatih"] = 20;
-
-    cout << "DAFTAR UMUR SISWA" << endl;
-
-    // perulangan range based loop untuk menampilkan map
-    for (auto &entry : umursiswa)
-    {
-        cout<< "-> "<<entry.first<<" umur : "<<entry.second<<endl;
-    }
-    return 0;
-}
-```
-[Output Program]
-
-![OUTPUT NO 3](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/713137c1-ef78-46a6-a88d-9095aee7b9c6)
-
-[Perbedaan Array dan Map]
-
-Kode diatas merupakan penggunaan map dalam c++, dimulai dari insialisasi map beserta tipe datanya kemudian pengisian map pada int main lalu terakhir
-dengan perulangan for range based loop dengan menggunakan auto mencetak map tersebut. Perbedaan antara array dan map terletak pada tipe data indeks
-pada map yang memungkinkan untuk berupa tipe data selain integer. Di map juga terdapat perulangan for range based untuk mengurutkan cetakan sesuai
-huruf depan.
 
 ## Kesimpulan
-Kesimpulan yang didapatkan dari praktikum ini adalah bahwa dalam membuat program kita tidak pernah terlepas dari yang namanya tipe data. Karena
-tipe data juga merupakan salah satu komponen penting terbentuknya sebuah program.
+
 
 ## Referensi
 [1] MODUL 1 - TIPE DATA
