@@ -30,7 +30,7 @@ int main()
     return 0;
 }*/
 //no 2
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 //Program input array 3 dimensi
 int main ()
@@ -83,7 +83,7 @@ int main ()
         }
         cout << endl;
     }
-}
+}*/
 // no 3
 /*#include<iostream>
 using namespace std;
