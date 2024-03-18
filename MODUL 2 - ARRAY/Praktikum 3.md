@@ -185,9 +185,40 @@ di inputkan oleh user. Setelah itu program akan mencari nilai maksimum dari bany
 
 [Contoh Program]
 ```C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int data_array[10]={1,2,3,4,5,6,7,8,9,10};
+    cout << "Data Array   : ";
+    for (int i = 0; i < 10; i++)
+    {
+        cout << data_array[i] << " ";
+    }cout << endl;
 
+    cout << "Nomor Genap  : ";
+    for (int i = 0; i < 10; i++)
+    {
+        if(data_array[i]%2==0)
+        {
+          cout << data_array[i] << " "; 
+        }
+    }cout << endl;
+
+    cout << "Nomor Ganjil : ";
+    for (int i = 0; i < 10; i++)
+    {
+        if (data_array[i]%2!=0)
+        {
+            cout << data_array[i] << " ";
+        }
+    }cout << endl;
+    return 0;
+}
 ```
 [Output Program 1]
+
+![Screenshot (167)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/1e9957a7-33f8-48c3-8238-90ca727fc835)
 
 
 ## 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
