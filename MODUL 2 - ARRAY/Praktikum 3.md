@@ -229,9 +229,66 @@ adalah 0. Lalu untuk mencari nomor ganjil juga sama, namun untuk kondisi "if" ji
    
 [Contoh Program]
 ```C++
-
+#include<iostream>
+using namespace std;
+//Program input array 3 dimensi
+int main ()
+{
+    int a,b,c;
+    cout << "Masukan Index Dimensi 1 : ";
+    cin >> a;
+    cout << "Masukan Index Dimensi 2 : ";
+    cin >> b;
+    cout << "Masukan Index Dimensi 3 : ";
+    cin >> c;
+    cout << endl;
+    //deklarasi array
+    int arr[a][b][c];
+    //input elemen
+    for(int x = 0; x < a; x++)
+    {
+        for(int y = 0; y < b; y++)
+        {
+            for(int z = 0; z < c; z++)
+            {
+                cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";
+                cin >> arr [x][y][z];
+            }
+        }
+        cout << endl;
+    }
+    //output array
+    for(int x = 0; x < a; x++)
+    {
+        for(int y = 0; y < b; y++)
+        {
+            for (int z = 0; z < c; z++)
+            {
+                cout << " Data Array ["<< x << "]["<< y <<"][" << z <<"] = " << arr [x][y][z] << endl;
+            }
+        }
+    }
+    cout << endl;
+    //tampilkan array
+    for (int x = 0; x < a; x++)
+    {
+        for (int y = 0; y < b; y++)
+        {
+            for (int z = 0; z < c; z++)
+            {
+                cout << arr [x] [y] [z] << " "<< ends;
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
 ```
 [Output Program]
+
+![Screenshot (169)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/ed86fd75-b78c-4828-a9c3-4becda0d5e9d)
+
+Kode diatas adalah penerapan dari array multidimensi, kode tersebut berfungsi untuk menginput array tiga dimensi dengan indeks dan isi dinputkan oleh user.
 
 ## 3.Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
@@ -291,7 +348,15 @@ maksimum. Lalu untuk mencari rata-rata gunakan perulangan "for" dengan rumus sep
 rata-rata adalah hasil penjumlahan dari angka yang kita inputkan kemudian dibagi dengan jumlah index atau array.
 
 ## Kesimpulan
+Dari praktikum diatas dapat disimpulkan beberapa tentang array :
 
+1. Dengan menggunakan array, kita dapat mengakses elemen-elemen data secara langsung melalui indeksnya, tanpa perlu mencari atau mengiterasi melalui seluruh struktur data.
+
+2. Array memungkinkan alokasi memori yang terstruktur dan efisien. Hal ini memungkinkan untuk mengatur data dengan baik dalam memori komputer, memungkinkan akses cepat dan manipulasi data.
+
+3. Array memiliki ukuran yang tetap setelah dideklarasikan. Keuntungannya adalah kita tahu ukuran maksimum dari awal, yang memudahkan alokasi memori. Namun, bisa menjadi kerugian jika kita tidak tahu ukuran pasti yang diperlukan atau jika kita memerlukan fleksibilitas dalam penambahan atau pengurangan elemen.
+
+4. Dengan menggunakan indeks, program dapat dengan mudah mengakses elemen-elemen dalam array. Hal ini memudahkan dalam manipulasi data, seperti penambahan, pengurangan, atau pengurutan. 
 
 ## Referensi
-[1] MODUL 1 - TIPE DATA
+[1] MODUL 2 - ARRAY
