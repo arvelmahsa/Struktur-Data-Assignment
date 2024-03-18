@@ -220,6 +220,10 @@ int main()
 
 ![Screenshot (167)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/1e9957a7-33f8-48c3-8238-90ca727fc835)
 
+Kode diatas adalah kode untuk menyeleksi nomor ganjil dan genap dari data array yang sudah di tentukan. Banyak Array di inisialisasikan terlebih
+dahulu kemudian untuk menampilkannya menggunakkan perulangan "for" dengan statement seperti diatas. Selanjutnya untuk mencari nilai genap, gunakan
+statement for yang sama, lalu didalam "For" tersebut gunakan statement percabangan "if" dengan kondisi jika data array diatas dibagi 2 hasilnya 
+adalah 0. Lalu untuk mencari nomor ganjil juga sama, namun untuk kondisi "if" jika data array dibagi 2 tidak sama dengan 0.
 
 ## 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
    
@@ -231,10 +235,60 @@ int main()
 
 ## 3.Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
-[CONTOH PROGRAM]
-
+[Contoh Program]
+```C++
+#include<iostream>
+using namespace std;
+int main ()
+{   int a;
+float rata_rata;
+    int maks,min, i = 1;
+    cout << "Masukan Jumlah Array : ";
+    cin >> a;
+    int banyak_angka[a];
+    cout << "Masukan " << a << " angka \n";
+    for (i = 0; i < a; i++)
+    {
+        cout << "Array ke- "<< (i) << ": ";
+        cin >> banyak_angka[i];
+    }
+    maks = banyak_angka[0];
+    for (i = 0; i < a; i++)
+    {
+        if (banyak_angka[i] > maks)
+        {
+            maks = banyak_angka[i];
+        }
+    }
+    cout << "Nilai Maksimum adalah " << maks << endl;
+    min = banyak_angka[0];
+    for (i = 0; i < a; i++)
+    {
+        if (banyak_angka[i] < min)
+        {
+            min = banyak_angka[i];
+        }
+    }
+    cout << "Nilai Minimum adalah " << min << endl;
+    for (int i = 0; i < a; i++){
+        rata_rata += banyak_angka[i];
+    }
+    cout << "Rata-Rata adalah " << rata_rata/a << endl;
+ return 0;
+}
+```
 [Output Program]
 
+![Screenshot (168)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/8b77f336-26e6-4345-b039-f860c4fcc19e)
+
+Program diatas berfungsi untuk mencari nilai maksimum, minimum, dan rata-rata dari jumlah angka yang sudah diinputkan oleh user. 
+Langkah awal yakni menginisialisasi terlebih dahulu variabel yang diperlukan. Lalu buat output untuk menginputkan jumlah array atau
+index. Setelah menginputkan jumlah array kemudian buat output untuk menginputkan banyak bilangan yang kita inginkan sesuai jumlah array
+yang sudah kita inputkan. Kemudian untuk mencari nilai minimum, cara nya adalah menginisialisasikan bahwa nilai minimum sama dengan 
+angka yang kita input. Untuk menampilkannya gunakan perulangan "For" dengan rumus seperti diatas, kemudian didalamnya gunakan statement
+percabangan "if" dengan kondisi banyak angka kurang dari min maka nilai minimum adalah banyak angka. Begitu juga untuk mencari nilai
+maksimum. Lalu untuk mencari rata-rata gunakan perulangan "for" dengan rumus seperti diatas, kemudian didalamnya gunakan rumus bahwa
+rata-rata adalah hasil penjumlahan dari angka yang kita inputkan kemudian dibagi dengan jumlah index atau array.
 
 ## Kesimpulan
 
