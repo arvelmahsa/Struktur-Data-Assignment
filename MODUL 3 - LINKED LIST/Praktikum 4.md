@@ -3,48 +3,26 @@
 
 ## Dasar Teori
 ## a) Single Linked List
-Linked List merupakan suatu bentuk struktur data yang berisi kumpulan data yang disebut sebagai node 
-yang tersusun secara sekuensial, saling sambung menyambung, dinamis, dan terbatas. Setiap elemen dalam linked list
-dihubungkan ke elemen lain melalui pointer. Masing-masing komponen sering disebut dengan simpul atau node atau verteks. 
+Linked List merupakan koleksi linear dari data, yang disebut sebagai nodes, dimana setiap node akan menunjuk pada node lain melalui sebuah pointer. Linked List dapat didefinisikan pula sebagai kumpulan nodes yang merepresentasikan sebuah sequence. Sebuah linked list yang hanya memiliki 1 penghubung ke node lain disebut sebagai single linked list. Di dalam sebuah linked list, ada 1 pointer yang menjadi gambaran besar, yakni pointer HEAD yang menunjuk pada node pertama di dalam linked list itu sendiri. Sebuah linked list dikatakan kosong apabila isi pointer head adalah NULL. Beberapa operasi yang biasanya ada di dalam sebuah linked list adalah:
 
-Pointer adalah alamat elemen. Setiap simpul pada dasarnya dibagi atas dua bagian pertama disebut bagian
-isi atau informasi atau data yang berisi nilai yang disimpan oleh simpul. Bagian kedua disebut bagian pointer 
-yang berisi alamat dari node berikutnya atau sebelumnya. Dengan menggunakan struktur seperti ini, linked list
-dibentuk dengan cara menunjuk pointer next suatu elemen ke elemen yang mengikutinya. Pointer next pada elemen
-terakhir merupakan NULL, yang menunjukkan akhir dari suatu list. Elemen pada awal suatu list disebut head
-dan elemen terakhir dari suatu list disebut tail.
+1. Push
 
-![Screenshot (170)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/ac072179-f0d8-412f-9d32-0195838216df)
+Push merupakan sebuah operasi insert dimana di dalam linked list terdapat 2 kemungkinan insert, yaitu insert melalui depan (pushDepan) ataupun belakang (pushBelakang). Operasi pushDepan berarti data yang paling baru dimasukkan akan berada di depan data lainnya, dan sebaliknya pushBelakang berarti data yang paling baru akan berada di belakang data lainnya.
+Representasinya adalah sebagai berikut:
 
-Dalam operasi Single Linked List, umumnya dilakukan operasi penambahan dan penghapusan simpul pada awal atau
-akhir daftar, serta pencarian dan pengambilan nilai pada simpul tertentu dalam daftar. Karena struktur data ini
-hanya memerlukan satu pointer untuk setiap simpul, maka Single Linked List umumnya lebih efisien dalam penggunaan
-memori dibandingkan dengan jenis Linked List lainnya, seperti Double Linked List dan Circular Linked List.
-Single linked list yang kedua adalah circular linked list. Perbedaan circular linked list dan non circular linked 
-adalah penunjuk next pada node terakhir pada circular linked list akan selalu merujuk ke node pertama.
+pushDepan: 5, 3, 7, 9 maka hasilnya adalah: 9 ->7 ->3 -> 5 -> NULL
+pushBelakang: 5, 3, 7, 9 maka hasilnya adalah: 5 ->3 ->7 ->9 -> NULL
 
-![Screenshot (171)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/58d37faf-d483-4255-b6df-48a3f9200e2e)
+2. Pop
+   
+Pop, kebalikan dari push, merupakan operasi delete, dimana di dalam linked list memiliki 2 kemungkinan delete, yaitu melalui depan (popDepan) dan melalui belakang (popBelakang). PopDepan berarti data yang akan dihapus adalah data paling depan, dan popBelakang berarti data yang akan dihapus adalah data paling belakang (akhir).
+
+Dalam penerapan code single linked list, umumnya hanya digunakan pointer head sebagai pointer yang menunjuk pada linked list.
 
 ## b) Double Linked List
-Double Linked List adalah struktur data Linked List yang mirip dengan Single Linked List, namun dengan tambahan satu pointer tambahan pada setiap
-simpul yaitu pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan untuk melakukan
-operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Setiap simpul pada Double Linked List memiliki tiga elemen penting, yaitu
-elemen data (biasanya berupa nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya.
-
-Keuntungan dari Double Linked List adalah memungkinkan untuk melakukan operasi penghapusan dan penambahan pada simpul dimana saja dengan
-efisien, sehingga sangat berguna dalam implementasi beberapa algoritma yang membutuhkan operasi tersebut. Selain itu, Double Linked List juga
-memungkinkan kita untuk melakukan traversal pada list baik dari depan (head) maupun dari belakang (tail) dengan mudah. Namun, kekurangan dari
-Double Linked List adalah penggunaan memori yang lebih besar dibandingkan dengan Single Linked List, karena setiap simpul membutuhkan
-satu pointer tambahan. Selain itu, Double Linked List juga membutuhkan waktu eksekusi yang lebih lama dalam operasi penambahan dan penghapusan
-jika dibandingkan dengan Single Linked List.
-Representasi sebuah double linked list dapat dilihat pada gambar berikut ini:
-
-![Screenshot (172)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/376476a5-14e5-4cd5-b925-3090dc7bc3e6)
-
-Di dalam sebuah linked list, ada 2 pointer yang menjadi penunjuk utama, yakni pointer HEAD yang menunjuk pada node pertama di dalam linked list
-itu sendiri dan pointer TAIL yang menunjuk pada node paling akhir di dalam linked list. Sebuah linked list dikatakan kosong apabila isi pointer head adalah
-NULL. Selain itu, nilai pointer prev dari HEAD selalu NULL, karena merupakan data pertama. Begitu pula dengan pointer next dari TAIL yang
-selalu bernilai NULL sebagai penanda data terakhir.
+Pengertian Double Linked List adalah sekumpulan node data yang terurut linear atau sekuensial dengan dua buah pointer yaitu prev dan next.
+Double Linked List adalah linked list dengan node yang memiliki data dan dua buah reference link (biasanya disebut next dan prev) yang menunjuk ke node sebelum dan node sesudahnya. Pada implementasinya, terdapat dua variasi double linked list yaitu circular dan non-circular layaknya pada single linked list.
+Double linked list memiliki beberapa operasi dasar pada list, misalkan penyisipan, penghapusan, menampilkan maju, dan menampilkan mundur.
 
 ## Guided
 ## a.) Latihan Single Linked List
@@ -957,17 +935,17 @@ akan bekerja sesuai perintah sesuai dengan yang di coding.
 Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di
 urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
 
-Nama Produk    Harga
+Nama Produk      Harga
 
-Originote     60.000
+Originote       60.000
 
-Somethinc    150.000
+Somethinc       150.000
 
-Skintific    100.000
+Skintific       100.000
 
-Wardah       50.000
+Wardah          50.000
 
-Hanasui      30.000   
+Hanasui         30.000   
 
 Case:
 
@@ -999,20 +977,21 @@ Toko Skincare Purwokerto
 
 8. Exit
 
+
 Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
 ini :
 
-Nama Produk    Harga
+Nama Produk       Harga
 
-Originote     60.000
+Originote        60.000
 
-Somethinc    150.000
+Somethinc        150.000
 
-Azarine       65.000
+Azarine          65.000
 
-Skintific    100.000
+Skintific        100.000
 
-Cleora        55.000
+Cleora           55.000
 
 ## Source Code
 ```C++
@@ -1295,25 +1274,38 @@ Case:
 1. Tambahkan produk Azarine dengan harga 65000 diantara
 Somethinc dan Skintific
 
+![Screenshot (187)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/df9f2278-02de-4852-a821-70de06eace17)
+
 2. Hapus produk wardah
+
+![Screenshot (188)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/b6459ae8-f34d-4c74-b6f8-3cef10ed7a32)
 
 3. Update produk Hanasui menjadi Cleora dengan harga 55.000
 
+![Screenshot (189)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/09129253-2539-43e6-9439-b9f431a31704)
+
 4. Tampilkan menu seperti dibawah ini
 
+![Screenshot (190)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/0f6c0f81-256d-4a97-b1a9-fff4538dd6f9)
 
-[Output Program]
 
 ## Kesimpulan
-Dari praktikum diatas dapat disimpulkan beberapa tentang array :
+Kelebihan Linked List
+- Ukuran Fleksibel: Linked List memiliki ukuran yang fleksibel karena kita dapat menambah atau menghapus simpul dengan mudah tanpa mempengaruhi simpul lainnya dalam urutan. Hal ini membuat Linked List lebih cocok digunakan ketika kita tidak tahu persis ukuran yang dibutuhkan atau jika ukurannya sering berubah.
 
-1. Dengan menggunakan array, kita dapat mengakses elemen-elemen data secara langsung melalui indeksnya, tanpa perlu mencari atau mengiterasi melalui seluruh struktur data.
+- Penyisipan dan Penghapusan Elemen Efisien: Operasi penyisipan dan penghapusan elemen di Linked List relatif lebih efisien karena kita hanya perlu mengatur pointer simpul dan tidak perlu menggeser elemen-elemen lainnya.
 
-2. Array memungkinkan alokasi memori yang terstruktur dan efisien. Hal ini memungkinkan untuk mengatur data dengan baik dalam memori komputer, memungkinkan akses cepat dan manipulasi data.
+- Penggunaan Memori yang Efisien: Linked List hanya menggunakan ruang yang diperlukan untuk elemen yang sebenarnya digunakan. Jika kita hanya menggunakan sebagian dari Linked List, maka penggunaan memori akan lebih efisien dibandingkan dengan Array.
 
-3. Array memiliki ukuran yang tetap setelah dideklarasikan. Keuntungannya adalah kita tahu ukuran maksimum dari awal, yang memudahkan alokasi memori. Namun, bisa menjadi kerugian jika kita tidak tahu ukuran pasti yang diperlukan atau jika kita memerlukan fleksibilitas dalam penambahan atau pengurangan elemen.
+Kekurangan Linked List
+- Tidak Mendukung Pengaksesan Langsung: Linked List tidak dapat diakses langsung seperti Array. Kita harus melalui simpul pertama dan mengikuti pointer secara berurutan untuk mencapai simpul yang diinginkan. Ini membuat Linked List lebih lambat dalam akses elemen secara acak.
 
-4. Dengan menggunakan indeks, program dapat dengan mudah mengakses elemen-elemen dalam array. Hal ini memudahkan dalam manipulasi data, seperti penambahan, pengurangan, atau pengurutan. 
+- Penyimpanan Memori Tambahan: Setiap simpul dalam Linked List mengandung pointer ke simpul berikutnya. Hal ini mengakibatkan penggunaan memori yang sedikit lebih besar daripada Array yang hanya menggunakan ruang yang diperlukan untuk elemen yang sebenarnya.
 
 ## Referensi
-[1] MODUL 2 - ARRAY
+[1] Binus University, Pengertian Single Linked List. https://socs.binus.ac.id/2017/03/15/single-linked-list/.
+    rizkidoank. Pengertian Double Linked List. rizkidoank.com. https://www.rizkidoank.com/2016/10/17/double-linked-list/.
+[2] Perbedaan Array dan Linked List, perbedaan.co.id, https://www.perbedaan.co.id/perbedaan-array-dan-linked-list/. 2023.
+
+
+
