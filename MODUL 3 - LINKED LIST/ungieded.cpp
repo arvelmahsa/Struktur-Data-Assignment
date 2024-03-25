@@ -287,11 +287,11 @@ void tampil()
 int main()
 {
     int pilihan, usia, posisi;
-    string namajenazah;
+    string nama;
     init();
     do{
     system("cls");
-    cout << " DATA NAMA DAN USIA JENAZAH\n";
+    cout << " DATA NAMA DAN USIA\n";
     cout << " 1.  Tambah depan\n";
     cout << " 2.  Tambah belakang\n";
     cout << " 3.  Tambah Tengah\n";
@@ -307,27 +307,27 @@ int main()
     cin >> pilihan;
     switch(pilihan)
     {
-        case 1 : cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 1 : cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
-        insertDepan(usia, namajenazah);
+        insertDepan(usia, nama);
         break;
 
-        case 2 : cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 2 : cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
-        insertBelakang(usia, namajenazah);
+        insertBelakang(usia, nama);
         break;
 
-        case 3 : cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 3 : cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
         cout << " Posisi : ";
         cin >> posisi;
-        insertTengah(usia, posisi ,namajenazah);
+        insertTengah(usia, posisi ,nama);
         break;
 
         case 4 :
@@ -345,27 +345,27 @@ int main()
         break;
 
 
-        case 7 : cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 7 : cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
-        ubahDepan(usia, namajenazah);
+        ubahDepan(usia, nama);
         break;
 
-        case 8 :  cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 8 :  cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
-        ubahBelakang(usia, namajenazah);
+        ubahBelakang(usia, nama);
         break;
 
-        case 9 :  cout << " Nama Jenazah : ";
-        cin>> namajenazah;
-        cout << " Usia Jenazah : ";
+        case 9 :  cout << " Nama : ";
+        cin>> nama;
+        cout << " Usia : ";
         cin>>usia;
         cout << "Posisi : ";
         cin >> posisi;
-        ubahTengah(usia,posisi, namajenazah);
+        ubahTengah(usia,posisi, nama);
         break;
 
         case 10 :
@@ -384,13 +384,13 @@ int main()
     return 0;
 }*/
 // nomor 2
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 class Node
 {
 public:
-    int harga;
+    string harga;
     string namaproduk;
     Node *prev;
     Node *next;
@@ -419,7 +419,7 @@ public:
         return jumlah;
     }
 
-    void push(int harga, string namaproduk)
+    void push(string harga, string namaproduk)
     {
         Node *newNode = new Node;
         newNode->harga = harga;
@@ -437,7 +437,7 @@ public:
         head = newNode;
     }
 
-    void push_middle(int harga, string namaproduk, int posisi)
+    void push_middle(string harga, string namaproduk, int posisi)
     {
         if (posisi < 1 || posisi > hitungList())
         {
@@ -523,7 +523,7 @@ public:
             delete temp;
         }
     }
-    bool update(string oldData, string namaproduk, int harga)
+    bool update(string oldData, string namaproduk, string harga)
     {
         Node *current = head;
         while (current != nullptr)
@@ -565,21 +565,23 @@ public:
 int main()
 {
     DoublyLinkedList list;
-    int harga,posisi;
-    string namaproduk;
+    int posisi;
+    string namaproduk, harga;
     while (true)
     {   system("cls");
-        cout << "1. Tambah Data" << endl;
-        cout << "2. Hapus Data" << endl;
-        cout << "3. Update data" << endl;
-        cout << "4. Tambah Data Urutan Tertentu" << endl;
-        cout << "5. Hapus Data Urutan Tertentu" << endl;
-        cout << "6. Hapus Seluruh Data" << endl;
-        cout << "7. Tampilkan Data" << endl;
-        cout << "8. Exit" << endl;
+        cout << "Toko Skincare Purwokerto\n";
+        cout << " 1. Tambah Data" << endl;
+        cout << " 2. Hapus Data" << endl;
+        cout << " 3. Update data" << endl;
+        cout << " 4. Tambah Data Urutan Tertentu" << endl;
+        cout << " 5. Hapus Data Urutan Tertentu" << endl;
+        cout << " 6. Hapus Seluruh Data" << endl;
+        cout << " 7. Tampilkan Data" << endl;
+        cout << " 8. Exit" << endl;
         int choice;
-        cout << "Enter your choice: ";
+        cout << " Enter your choice: ";
         cin >> choice;
+        cout << endl;
         switch (choice)
         {
         case 1:
@@ -653,4 +655,4 @@ int main()
         }
     }
     return 0;
-}
+}*/
