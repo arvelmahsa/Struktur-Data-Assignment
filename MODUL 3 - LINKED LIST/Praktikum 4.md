@@ -981,17 +981,17 @@ Toko Skincare Purwokerto
 Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
 ini :
 
-Nama Produk       Harga
+Nama Produk                 Harga
 
-Originote        60.000
+Originote                  60.000
 
-Somethinc        150.000
+Somethinc                 150.000
 
-Azarine          65.000
+Azarine                    65.000
 
-Skintific        100.000
+Skintific                 100.000
 
-Cleora           55.000
+Cleora                     55.000
 
 ## Source Code
 ```C++
@@ -1288,6 +1288,9 @@ Somethinc dan Skintific
 
 ![Screenshot (190)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/0f6c0f81-256d-4a97-b1a9-fff4538dd6f9)
 
+
+Kode diatas merupakan penerapan dari double linked list untuk menginputkan nama dan harga produk. Kemudian terdapat 8 menu yang 
+bekerja sesuai perintah.
 
 ## Kesimpulan
 Kelebihan Linked List
