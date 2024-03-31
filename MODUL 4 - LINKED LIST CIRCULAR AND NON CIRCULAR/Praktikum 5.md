@@ -1,4 +1,4 @@
-![Screenshot (195)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/6cd7786d-058b-4b26-96fa-86bd3799ff65)# <h1 align="center">Laporan Praktikum Modul Circular And Non Circular </h1>
+# <h1 align="center">Laporan Praktikum Modul Circular And Non Circular </h1>
 <p align="center">Arvel Mahsa Athallah Firdaus-2311102188-IF-11-E</p>
 
 ## Dasar Teori
