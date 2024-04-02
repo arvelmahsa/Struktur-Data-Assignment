@@ -1175,8 +1175,9 @@ data nama dan NIM mahasiswa. Selain itu terdapat beberapa menu yang tersedia den
    implementasi buffer cincin atau algoritma tertentu seperti algoritma Floyd Cycle Detection.
    
 ## Referensi
-[1] https://www.simplilearn.com/tutorials/data-structure-tutorial/types-of-linked-list
-[2] https://www.prepbytes.com/blog/linked-list/a-brief-introduction-to-linked-lists/
+[1] simplilearn, "Types of Linked List in Data Structures", 2023, https://www.simplilearn.com/tutorials/data-structure-tutorial/types-of-linked-list, [2 April 2024]
+
+[2] PrepBytes Blog, "Know Everything about Linked List in Data Structure", https://www.prepbytes.com/blog/linked-list/a-brief-introduction-to-linked-lists/, [2 April 2024]
 
 
 
