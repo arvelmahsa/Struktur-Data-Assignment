@@ -630,8 +630,44 @@ int main ()
 
 ## Unguided 
    [Soal]
-   
-## 1. Soal Mengenai Linked List
+   Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM
+   mahasiswa, dengan menggunakan input dari user.
+## 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa 
+berikut contoh tampilan output dari nomor 1:
+## Tampilan Menu
+![output pertama](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/a3987a16-f6d3-449f-91a2-abf17616574f)
+
+## Tampilan Operasi Tambah
+Tambah Depan
+
+![tambah depan](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/68a6e6f4-3102-491a-a978-89cfa6d2b0b1)
+
+
+Tambah Tengah
+
+![tambah tengah](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/6fecb5f7-001d-4ac9-80ae-ded9c1145b50)
+
+## Tampilan Operasi Hapus
+Hapus Belakang
+
+![hapus belakang](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/30a7e6c7-69ab-4d69-91c5-a98523f6295e)
+
+Hapus Tengah
+
+![hapus tengah](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/eaf91a3d-d0aa-4ddc-b0a8-56862434e7f4)
+
+## Tampilan Operasi Ubah
+Ubah Belakang
+
+![ubah belakang](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/3a816934-4ba4-487f-9104-b688ab376400)
+
+Ubah Tengah
+
+![ubah tengah](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/ea03d49a-47ae-4ff8-8c29-f6000c3a55da)
+
+## Tampilan Operasi Tampil Data
+
+![tampil data](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/2b132dc6-6c50-4ce1-bbc2-62bb7b4a83da)
 
 ## Source Code 
 ```C++
