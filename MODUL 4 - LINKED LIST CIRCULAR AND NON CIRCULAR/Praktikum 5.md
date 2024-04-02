@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Circular And Non Circular </h1>
+![tambah antara farrel dan denis](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/230e993d-6e6d-4829-ab1a-ebd1f0a43cd6)# <h1 align="center">Laporan Praktikum Modul Circular And Non Circular </h1>
 <p align="center">Arvel Mahsa Athallah Firdaus-2311102188-IF-11-E</p>
 
 ## Dasar Teori
@@ -668,6 +668,37 @@ Ubah Tengah
 ## Tampilan Operasi Tampil Data
 
 ![tampil data](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/2b132dc6-6c50-4ce1-bbc2-62bb7b4a83da)
+
+## 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
+![tampil 2](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/f19a6780-da92-4be5-a286-1340068fbbbe)
+
+## 3. Lakukan perintah berikut :
+# a) Tambahkan data berikut diantara Farrel dan Denis : Wati 2330004
+![tambah antara farrel dan denis](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/c9813584-d65d-4ac1-9d15-d01229c2244c)
+
+# b) Hapus data Denis
+![hapus denis](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/926c38e4-f26b-4b47-b057-8aed95d05f07)
+
+# c) Tambahkan data berikut di awal: Owi 2330000
+![tambah depan owi](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/5264cb1e-c036-4484-8e4d-6dbb4a08a834)
+
+# d) Tambahkan data berikut di akhir: David 23300100
+![tambah belakang david](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/23199a7e-d777-40d8-8d8a-ddbf96d7a2d1)
+
+# e) Ubah data Udin menjadi data berikut: Idin 23300045
+![ubah tengah idin](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/feaa1b7a-23eb-4b8a-b9c4-636907ebf728)
+
+# f) Ubah data terakhir menjadi berikut: Lucy 23300101
+![ubah belakang lucy](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/ebd9a287-7b2f-4060-ab4b-3816add87aa3)
+
+# g) Hapus data awal
+![hapus data awal](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/94411661-5ee4-45c9-8fbd-55f096dcd886)
+
+# h) Ubah data awal menjadi berikut: Bagas 2330002
+
+i) Hapus data akhir
+
+j) Tampilkan seluruh data
 
 ## Source Code 
 ```C++
