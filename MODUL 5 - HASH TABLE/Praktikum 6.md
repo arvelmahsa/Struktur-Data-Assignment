@@ -266,11 +266,8 @@ int main (){
 memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru,
 menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan
 nilai. Dengan ketentuan :
-
 a. Setiap mahasiswa memiliki NIM dan nilai.
-
 b. Program memiliki tampilan pilihan menu berisi poin C.
-
 c. Implementasikan fungsi untuk menambahkan data baru, menghapus data,
 mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai
 (80 – 90).
@@ -478,17 +475,22 @@ int main()
 ```
 ## [Output Program ]
 Menambah Data Baru
+
 ![Tambah Data](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/62baf3db-0e6e-4131-8afd-af65fceca581)
 
 Menghapus Data
+
 ![Remove Data](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/3298fd6a-42c5-46bd-9e21-53c4aaee2d49)
 
 Mencari Data Berdasarkan NIM
+
 ![Cari Data berdasarkan NIM](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/706dde7b-f07a-4871-9048-45f6f36b270c)
 
 Mencari Data Berdasarkan Nilai Rentang 80 - 90
+
 ![Cari Data Berdasarkan Nilai](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/ac293f96-af8d-4442-94a9-4cf5eb45ff33)
 
+Program diatas merupakan implementasi dari Hash Table untuk menginputkan data Nilai dan NIM Mahasiswa.
 
 ## Kesimpulan
 Keuntungan utama dari hash table dibandingkan struktur data lainnya adalah efisiensi dan kecepatan. Waktu yang dibutuhkan untuk mengakses sebuah elemen cukup cepat sehingga bisa lebih diandalkan. Jadi, Anda tidak perlu memakan waktu atau usaha besar untuk menyimpan dan mencari data yang diperlukan.
