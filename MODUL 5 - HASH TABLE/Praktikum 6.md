@@ -262,32 +262,29 @@ int main (){
 ![Screenshot (221)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/3acc3afe-eb66-4a66-937b-63a3e8e75f51)
 
 ## Unguided 
-   [Soal]
-   
-## 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
-[Gambar Soal]
+1. Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa
+memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru,
+menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan
+nilai. Dengan ketentuan :
 
+a. Setiap mahasiswa memiliki NIM dan nilai.
 
-[Contoh Program]
-```C++
-```
-[Output Program 1]
+b. Program memiliki tampilan pilihan menu berisi poin C.
 
+c. Implementasikan fungsi untuk menambahkan data baru, menghapus data,
+mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai
+(80 – 90).
 
-## 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
-   
-[Contoh Program]
-```C++
-
-```
-[Output Program]
-
-
-[Contoh Program]
+[Source Code]
 ```C++
 
+
+
+
 ```
-[Output Program]
+[Output Program ]
+
+
 
 
 ## Kesimpulan
