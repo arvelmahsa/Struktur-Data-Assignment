@@ -501,7 +501,9 @@ Keuntungan utama dari hash table dibandingkan struktur data lainnya adalah efisi
 ## Referensi
 [1] Pengertian Fungsi Hash. 
 https://yuliana.lecturer.pens.ac.id/Struktur%20Data%20C/Teori%20SD%20-%20pdf/Data%20Structure%20-%20Bab%2010.pdf
+
 [2] Fungsi Utama Hash Table. 
 https://dosenit.com/kuliah-it/hash-table
+
 [3] Keuntungan Hash Table
 https://algorit.ma/blog/hash-table-adalah-2022/
