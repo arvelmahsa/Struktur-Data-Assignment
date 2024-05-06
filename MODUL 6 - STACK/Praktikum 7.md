@@ -9,21 +9,19 @@ linier dimana hanya bagian TOP-nya saja yang bisa diakses. Bersifat LIFO=LastInF
 Out. Bisa diimplementasikan menggunakan array atau LinkedList.
 
 ## Ilustrasi Stack
-Terdapatduabuahkotakyangditumpuk,kotakyangsatuakanditumpukdiataskotak
-yanglainnya.Jikakemudianstack2kotaktadi,ditambahkotakketiga,keempat,kelima,
-danseterusnya,makaakandiperolehsebuahstackkotakyangterdiridariNkotak
+Terdapat dua buah kotak yang ditumpuk,kotak yang satu akan ditumpuk diatas kotak
+yang lainnya.Jika kemudian stack 2 kotak tadi,ditambah kotak ketiga,keempat,kelima,
+dan seterusnya,maka akan diperoleh sebuah stack kotak yang terdiri dari N kotak
 
 ## Operasi Dasar Pada Stack
 Adapun operasi-operasi dasar dari suatu stack adalah :
 
 a) Create(Stack)
-
 Operasi Create(Stack) digunakan untuk membuat suatu stack baru
 dengan nama stack, yang nilai elemen saat stack tersebut dibuat adalah NOEL(S)
 = 0, TOP(S) = NULL (tidak terdefinisikan)
 
 b) IsEmpty(Stack)
-
 Operasi ini merupakan operasi untuk mencek isi dari suatu stack dalam
 keadaan kosong atau berisi. Operasi ini memiliki 2 (dua) kondisi boolean yaitu :
 
@@ -33,27 +31,22 @@ keadaan kosong atau berisi. Operasi ini memiliki 2 (dua) kondisi boolean yaitu :
 NOEL(S) > 0
 
 c) Push(Stack, Elemen)
-
 Operasi ini merupakan operasi untuk menambahkan satu elemen dengan
 nilai X pada puncak suatu stack, sehingga posisi TOP(S) akan bernilai X, penerapan
 operasi push pasa suatu stack S akan berakibat overflow jika NOEL(S) dari stack
 tersebut telah bernilai maksimum.
 
 d) Pop(Stack)
-
 Operasi ini berfungsi untuk menghapus satu elemen dari stack S, sehingga
 posisi NOEL(S) akan berkurang satu elemen, dan TOP(S) akan berubah. Operasi
 pop dapat menyebabkan kondisi underflow jika suatu stack S yang berada dalam
 kondisi minimum dikenakan operasi pop.
 
 e) IsFULL
-
 Operasi ini untuk memeriksa apakah Stack sudah penuh.
 
 f) CLEAR
-
 Operasi ini untuk mengosongkan stack.
-
 
 # Guided
 ```C++
