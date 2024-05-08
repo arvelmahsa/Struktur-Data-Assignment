@@ -413,7 +413,9 @@ sering digunakan untuk manajemen memori dan penumpukan tindakan atau proses yang
 
 ## Referensi
 [1] Pengertian Dan Ilustrasi Stack. 
+
 file:///C:/Users/Acer/Downloads/ranita%20sari(1).pdf
 
 [2] Operasi Dasar Pada Stack. 
+
 [https://dosenit.com/kuliah-it/hash-table](https://repository.bsi.ac.id/repo/files/355474/download/Makalah-Struktur-data-dikti.pdf)
