@@ -314,6 +314,7 @@ int main()
 ```
 ## [Output Program 1 ]
 ![Screenshot (238)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/e313f48c-ebe7-4853-829a-15ebf4fe74e8)
+
 Program diatas merupakan penerapan dari stack berupa program untuk mengecek apakah kata yang di inputkan adalah palindrom atau bukan.
 Program diatas menerapkan fungsi to_lower untuk mengecilkan huruf yang diinputkan sekaligus supaya ketika user menginputkan kata dengan 
 huruf besar tetap bisa dicek palindrom atau bukannya.
@@ -402,6 +403,7 @@ int main()
 ```
 ## [Output Program 2]
 ![Screenshot (239)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/2276fdea-a366-4da4-b6e3-40a17fe1ec52)
+
 Program diatas adalah penerapan program stack, untuk membalikan kata yang telah di inputkan oleh user.
 
 ## Kesimpulan
