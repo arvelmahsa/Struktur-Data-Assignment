@@ -211,14 +211,203 @@ beserta operasi/fungsi yang dibuat?
 
 ![Screenshot (235)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/7e69fc9d-ebc3-4ad6-b350-1af723ce9731)
 
-## [Source Code]
+## [Source Code 1]
 ```C++
+#include <iostream>
+#include <cctype>
+#include <string>
 
+using namespace std;
+
+string array_kata[5];
+int maksimal = 5, top = 0;
+
+bool isFull()
+{
+    return (top == maksimal);
+}
+
+bool isEmpty()
+{
+    return (top == 0);
+}
+
+// Untuk Mengubah huruf besar menjadi kecil
+string to_lower(string kata_188)
+{
+    string kata = "";
+    for (int i = 0; i < kata_188.length(); i++)
+    {
+        kata += tolower(kata_188[i]);
+    }
+    return kata;
+}
+
+// Untuk mengecek ke palindroman
+void cek_palindrom(string kata_188)
+{
+    string kata = to_lower(kata_188);
+    string reverse_kata = "";
+
+    for (int i = kata_188.length() - 1; i >= 0; i--)
+    {
+        reverse_kata += kata[i];
+    }
+
+    cout << reverse_kata;
+
+    if (kata == reverse_kata)
+    {
+        cout << " Adalah Kata Palindrom";
+    }
+    else
+    {
+        cout << " Bukan Kata Palindrom";
+    }
+}
+
+void pusharray_kata(string data)
+{
+    if (isFull())
+    {
+        cout << "Data telah penuh" << endl;
+    }
+    else
+    {
+        cek_palindrom(data);
+        array_kata[top] = data;
+        top++;
+    }
+}
+
+int countStack()
+{
+    return top;
+}
+
+void cetakarray_kata()
+{
+    if (isEmpty())
+    {
+        cout << "Tidak ada kata yg dicetak" << endl;
+    }
+    else
+    {
+        for (int i = top - 1; i >= 0; i--)
+        {
+            cout << array_kata[i] << endl;
+        }
+    }
+}
+
+int main()
+{
+    string kata;
+    cout << endl;
+    cout << "Ketikan kata = ";
+    cin >> kata;
+    pusharray_kata(kata);
+    cout << endl;
+
+    return 0;
+}
 ```
-## [Output Program ]
+## [Output Program 1 ]
+![Screenshot (238)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/e313f48c-ebe7-4853-829a-15ebf4fe74e8)
+Program diatas merupakan penerapan dari stack berupa program untuk mengecek apakah kata yang di inputkan adalah palindrom atau bukan.
+Program diatas menerapkan fungsi to_lower untuk mengecilkan huruf yang diinputkan sekaligus supaya ketika user menginputkan kata dengan 
+huruf besar tetap bisa dicek palindrom atau bukannya.
+
+## [Source Code 2]
+```C++
+#include <iostream>
+#include <cctype>
+#include <string>
+
+using namespace std;
+
+string array_kata[4];
+int maksimal = 4, top = 0;
+
+bool isFull()
+{
+    return (top == maksimal);
+}
+
+bool isEmpty()
+{
+    return (top == 0);
+}
+
+string cek_reverse(string kata_188)
+{
+    string reverse_kata = "";
+
+    for (int i = kata_188.length() - 1; i >= 0; i--)
+    {
+        reverse_kata += kata_188[i];
+    }
+    cout << "Jika Dibalik Menjadi : ";
+    return reverse_kata;
+}
+
+void pusharray_kata(string data)
+{
+    if (isFull())
+    {
+        cout << "Data telah penuh" << endl;
+    }
+    else
+    {
+        string data_baru = cek_reverse(data);
+        array_kata[top] = data_baru;
+        top++;
+    }
+}
+
+int countStack()
+{
+    return top;
+}
+
+void cetakarray_kata()
+{
+    if (isEmpty())
+    {
+        cout << "Tidak ada data yang dicetak" << endl;
+    }
+    else
+    {
+        for (int i = top - 1; i >= 0; i--)
+        {
+            cout << array_kata
+
+                        [i]
+                 << endl;
+        }
+    }
+}
+
+int main()
+{
+    string kata;
+    cout << endl;
+    cout << "Ketikan Kata/Kalimat : ";
+    getline(cin, kata);
+    pusharray_kata(kata);
+    cetakarray_kata();
+    cout << endl;
+    return 0;
+}
+```
+## [Output Program 2]
+![Screenshot (239)](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/2276fdea-a366-4da4-b6e3-40a17fe1ec52)
+Program diatas adalah penerapan program stack, untuk membalikan kata yang telah di inputkan oleh user.
 
 ## Kesimpulan
-Keuntungan utama dari hash table dibandingkan struktur data lainnya adalah efisiensi dan kecepatan. Waktu yang dibutuhkan untuk meng
+Secara umum stack dalam pemrograman adalah struktur data yang mengikuti prinsip LIFO (Last In, First Out), yang berarti 
+elemen yang terakhir dimasukkan ke dalam stack dan akan menjadi yang pertama dikeluarkan. Dalam konteks pengembangan perangkat lunak, stack 
+sering digunakan untuk manajemen memori dan penumpukan tindakan atau proses yang harus dieksekusi.
 
 ## Referensi
 [1] Pengertian Dan Ilustrasi Stack. 
