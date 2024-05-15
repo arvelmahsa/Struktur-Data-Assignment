@@ -268,6 +268,11 @@ int main()
 ## [Output Program 1 ]
 ![output nomor 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/08ad7b6d-6191-4246-9a2a-397938a66146)
 
+Program diatas adalah penerapan queue dengan konsep single linked list. Dengan konsep linked list user dapat menginputkan
+antrean sebanyak mungkin tanpa harus mengubah jumlah array. Dalam linked list perlu mendeklarasikan struct dan node serta 
+variabel pointer tambahan seperti diatas. Beberapa konsep yang digunakan pada fungsi queue diganti menggunakan konsep 
+linked list.
+
 ## [Source Code 2]
 ```C++
 // //No2
@@ -463,6 +468,8 @@ int main()
 ### Tampilan Menu Lihat Queue (Setelah Dibersihkan)
 ![tampilan menu lihat setelah dibersihkan](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/417f9626-bd3d-43e4-9ae0-a277eff13093)
 
+Program diatas merupakan penerapan dari nomor 1 dimana konsep queue dari Array diganti dengan linked list. Konsep queue dibuat
+menu seperti diatas, kemudian pada fungsi yang akan dijalankan menggunakan konsep single linked list.
 
 ## Kesimpulan
 
