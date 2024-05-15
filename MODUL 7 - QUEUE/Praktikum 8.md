@@ -133,7 +133,11 @@ int main()
 
 
 # Unguided 
+1. Ubahlah penerapan konsep queue pada bagian guided dari array menjadi
+linked list
 
+2. Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM
+Mahasiswa
 
 ## [Source Code 1]
 ```C++
@@ -437,13 +441,33 @@ int main()
 ## [Output Program 2]
 ### Tampilan Menu Program
 ![menu ](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/9076f254-4f85-4d14-8e1a-fda615adf381)
+
 ### Tampilan Menu Tambahkan Queue
 ![menu tambah antrean](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/a0d5b75a-03b7-4972-8291-bbe996eb85d7)
+
+### Tampilan Menu Lihat Queue
+![menu lihat sebelum dihapus](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/f1280d97-2686-4937-9cf6-42afce00f475)
+
+### Tampilan Menu Hapus Queue
+![menu hapus](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/c50457ae-3085-4d61-af8f-12ca34b3d040)
+
+### Tampilan Menu Lihat Queue (Setelah Dihapus)
+![menu lihat setelah dihapus](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/b3a8ed54-2e70-4e12-abda-4f8000ba7524)
+
+### Tampilan Menu Hitung Queue (Setelah Dihapus)
+![menu hitung setelah dihapus](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/d43c7abd-be14-4e9b-94db-cb69c5cfad97)
+
+### Tampilan Menu Bersihkan Queue
+![menu bersihkan](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/8f4ee9b2-473f-4df1-9aa0-217521af50b1)
+
+### Tampilan Menu Lihat Queue (Setelah Dibersihkan)
+![tampilan menu lihat setelah dibersihkan](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/417f9626-bd3d-43e4-9ae0-a277eff13093)
+
 
 ## Kesimpulan
 
 ## Referensi
-[1] Pengertian Dan Ilustrasi Stack. 
+[1] Pengertian Queue. 
 
 file:///C:/Users/Acer/Downloads/ranita%20sari(1).pdf
 
