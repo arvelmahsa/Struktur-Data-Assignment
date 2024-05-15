@@ -32,15 +32,16 @@ Hal-hal/karakteristik yang penting dalam pengelolaan antrian adalah :
 3. Tail : Elemen terakhir dari antrian
 
 4. Panjang Antrian : Yaitu banyaknya (jumlah) elemen pada antrian,
+
    ada dua jenis panjang :
 
 a. Panjang aktual : merepresentasikan banyak item data pada antrian pada suatu saat.
 
 b. Kapasitas antrian : panjang maksimum yang diizinkan pada antrian
 
-5. Status : Merepresentasikan kondisi antrian pada satu saat, terdapat 3 jenis
+5. Status : Merepresentasikan kondisi antrian pada satu saat,
 
-status pada antrian, yaitu :
+   terdapat 3 jenis status pada antrian, yaitu :
 
 a. Kosong
 
