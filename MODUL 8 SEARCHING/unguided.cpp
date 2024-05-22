@@ -1,67 +1,77 @@
-// #include<iostream>
-// using namespace std;
 // // soal nomor 1
-// //deklarasi array
-// string arrayNama[] = {"arvel", "dwi","jon"};
-// int cari;
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// #include <iomanip>
 
-// void selection_sort(string arr[], int n)
-// {
-//     string temp;
-//     int min;
-//     for (int i = 0; i < n - 1; i++)
-//     {
-//         min = i;
-//         for (int j = i + 1; j < n; j++)
-//         {
-//             if (arr[j][0] < arr[min][0])
-//             {
+// using namespace std;
+// void pemilihan_sort(vector<char>& arr) {
+//     int n = arr.size();
+//     for (int i = 0; i < n - 1; i++) {
+//         int min = i;
+//         for (int j = i + 1; j < n; j++) {
+//             if (arr[j] < arr[min]) {
 //                 min = j;
 //             }
 //         }
-//         // Tukar elemen
-//         temp = arr[i];
-//         arr[i] = arr[min];
-//         arr[min]= temp;
+//         swap(arr[i], arr[min]);
 //     }
 // }
 
-// void binary_search(string arr[], int n, char huruf_yang_dicari)
-// {
-//     int awal = 0, akhir = n - 1, tengah, wisKetemu = 0;
-//     while (wisKetemu == 0 && awal <= akhir)
-//     {
-//         tengah = (awal + akhir) / 2;
-//         if (arr[tengah][0] == huruf_yang_dicari)
-//         //[0]index kata sesuai urutan abjad
-//         {
-//             wisKetemu = 1;
+
+// void pencarian_binary(const vector<char>& arr, char target) {
+//     int begin = 0, ending = arr.size() - 1, tengah;
+//     bool found = false;
+
+//     while (!found && begin <= ending) {
+//         tengah = (begin + ending) / 2;
+//         if (arr[tengah] == target) {
+//             found = true;
 //             break;
-//         }
-//         else if (arr[tengah][0] < huruf_yang_dicari)
-//         {
-//             awal = tengah + 1;
-//         }
-//         else
-//         {
-//             akhir = tengah - 1;
+//         } else if (arr[tengah] < target) {
+//             begin = tengah + 1;
+//         } else {
+//             ending = tengah - 1;
 //         }
 //     }
-//     if (wisKetemu == 1)
-//         cout << "\nHuruf ditemukan pada index ke-" << tengah << " " << arr[tengah] << endl;
+
+//     if (found)
+//         cout << "\nHuruf '"<< target <<"' ditemukan pada index ke-" << tengah << endl;
 //     else
-//         cout << "\nData tidak ditemukan\n";
+//         cout << "\nHuruf '" << target << "' tidak ditemukan\n";
 // }
 
-// int main()
-// {
-//     char huruf;
-//     cout << "Input One Character : ";
-//     cin >> huruf;
-//     selection_sort(arrayNama,3);
-//     binary_search(arrayNama,3, huruf);
+// int main() {
+//     string sentence;
+//     char letter;
+  
+//     cout << "\tBINARY SEARCH PROGRAM" << endl;
+//     cout << "\nInput Sentence : ";
+//     getline(cin, sentence);
 
+//     cout << "\nMasukkan huruf yang ingin dicari: ";
+//     cin >> letter;
+
+//     vector<char> charArray(sentence.begin(), sentence.end());
+
+//     cout << "\nKalimat Awal : ";
+//     for (char c : charArray) {
+//         cout << setw(3) << c;
+//     }
+//     cout << endl;
+
+//     pemilihan_sort(charArray);
+
+//     cout << "\nKalimat Setelah Di Urutkan : ";
+//     for (char c : charArray) {
+//         cout << setw(3) << c;
+//     }
+//     cout << endl;
+//     pencarian_binary(charArray, letter);
+
+//     return 0;
 // }
+
 // soal nomor 2
 // #include <iostream>
 // using namespace std;
@@ -69,7 +79,8 @@
 // {
 //     string kalimat;
 //     int jumlahHuruvokal;
-
+//     cout << endl;
+//     cout << "PROGRAM UNTUK MENCARI HURUF VOKAL\n";
 //     cout << "Masukkan Kalimat: ";
 //     getline(cin, kalimat);
 
@@ -88,21 +99,20 @@
 //     return 0;
 // }
 // soal nomor 3
-// Diketahui data = . Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
-#include <iostream>
-using namespace std;
-int arrayData[10] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
-int main()
-{
-    int banyak_angka_empat = 0;
-    // algoritma squential search
-    for (int i = 0; i < 10; i++)
-    {
-        if (arrayData[i] == 4)
-        {
-            banyak_angka_empat++;
-        }
-    }
-    cout << "Banyak Angka 4 ada : " << banyak_angka_empat << endl;
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int arrayData[10] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
+// int main()
+// {
+//     int banyak_angka_empat = 0;
+//     // algoritma squential search
+//     for (int i = 0; i < 10; i++)
+//     {
+//         if (arrayData[i] == 4)
+//         {
+//             banyak_angka_empat++;
+//         }
+//     }
+//     cout << "Banyak Angka 4 ada : " << banyak_angka_empat << endl;
+//     return 0;
+// }
