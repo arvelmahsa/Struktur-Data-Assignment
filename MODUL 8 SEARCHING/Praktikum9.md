@@ -2,7 +2,26 @@
 <p align="center">Arvel Mahsa Athallah Firdaus-2311102188-IF-11-E</p>
 
 # Dasar Teori
-## Pengertian searching
+## Searching
+### Sequential Searching
+Metode Sequential Searching memiliki tujuan yang sama pada umumnya yaitu, menemukan data yang terdapat pada array. Hanya saja, sequential search 
+ini sangat mudah implementasinya dalam pemrograman di banding binary search. Dibawah ini beberapa proses cara kerja metode sequential search.
+
+- Menentukan data yang akan dicari terlebih dahulu.
+  
+- Mencari data yang dicari pada array satu persatu dengan cara sekuensial.
+  
+- Dari data pertama hingga data terakhir yang terdapat pada array dibandingkan dengan data yang dicari.
+  
+- Apabila data ditemukan maka akan muncul statement sukses ditemukan.
+  
+- Apabila data tidak ditemukan maka juga akan muncul statement data tidak ditemukan
+
+### Binary Search
+Metode binary searching berbeda dengan metode sequential search. Perbedaanya terlihat dimana apabila sequential search tanpa melalui proses yang rumit termasuk dapat mencari data secara acak. Berbeda dengan metode binary search, dimana metode ini data harus terurut dengan baik secara ascending ataupun descending yang terdapat pada array. Jadi, metode binary search membutuhkan metode sorting, salah satunya bisa menggunakan selection sort.
+
+### Selection Sort
+Selection sort adalah algoritma pengurutan yang digunakan untuk mengurutkan data dari yang terkecil ke yang terbesar atau sebaliknya. Algoritma ini bekerja dengan cara mencari nilai terkecil dari data yang belum diurutkan, kemudian menempatkannya pada posisi pertama dari data yang sudah diurutkan. Proses ini dilakukan berulang-ulang hingga semua data terurut.
 
 # Guided
 ## Guided 1
@@ -335,13 +354,9 @@ int main()
 ## Kesimpulan
 
 ## Referensi
-[1] Pengertian Queue. 
+[1] Pengertian Binary Search, Sequential Search.
+http://www.sarjanapedia.com/2019/02/metode-searching-dalam-cpp.html
 
-[file:///C:/Users/Acer/Downloads/ranita%20sari(1).pdf](https://repository.unikom.ac.id/41990/1/pertemuan%203.pdf)
-
-[2] Karakteristik Queue. 
-
-Nixon Erzed, Karakteristik Queue, Struktur data Array pada
-STACK dan QUEUE, (8), Halaman 13.
-https://lms-paralel.esaunggul.ac.id/pluginfile.php?file=%2F87682%2Fmod_resource%2Fcontent%2F1%2F08_7228_ccs120_112018_pdf.pdf
+[2] Selection Sort
+https://anakmales.com/cpp-selection-sort/
 
