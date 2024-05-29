@@ -578,7 +578,8 @@ int main()
 
 ![output 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/596658a6-6517-4ae9-b9ff-2a4a5fbbbc5a)
 
-Program diatas merupakan penerapan dari graph untuk menginputkan bobot antara simpul 1 dengan simpul yang lainnya.
+Program diatas merupakan penerapan dari graph untuk menginputkan bobot antara simpul 1 dengan simpul yang lainnya. Kemudian
+di implementasikan dengan bentuk matrix.
 
 ## [Source Code 2]
 ```C++
