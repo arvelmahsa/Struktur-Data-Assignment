@@ -512,13 +512,76 @@ descendant dari node yang diinput kan!
 
 ## [Source Code 1]
 ```C++
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
+int jumlahsimpul;
+int bobotsimpul;
+string namasimpul;
+
+void isiSimpul(string simpul[])
+{
+    cout << "Masukkan nama simpul" << endl;
+    for (int i = 0; i < jumlahsimpul; i++)
+    {
+        cout << "Simpul " << i + 1 << " : ";
+        cin >> namasimpul;
+        simpul[i] = namasimpul;
+    }
+    cout << endl;
+}
+
+int main()
+{
+    cout << "Masukkan jumlah simpul : ";
+    cin >> jumlahsimpul;
+
+    string simpul_name[jumlahsimpul];
+    int matriks[jumlahsimpul][jumlahsimpul];
+    isiSimpul(simpul_name);
+
+    cout << "Masukkan bobot antar simpul" << endl;
+    for (int a = 0; a < jumlahsimpul; a++)
+    {
+        for (int b = 0; b < jumlahsimpul; b++)
+        {
+            cout << simpul_name[a] << " ==> " << simpul_name[b] << " = ";
+            cin >> bobotsimpul;
+            matriks[a][b] = bobotsimpul;
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    cout << "Matriks bobot antar simpul" << endl;
+    cout << setw(12) << "";
+    for (int a = 0; a < jumlahsimpul; a++)
+    {
+        cout << setw(12) << simpul_name[a];
+    }
+    cout << endl;
+
+    for (int a = 0; a < jumlahsimpul; a++)
+    {
+        cout << setw(12) << simpul_name[a];
+        for (int b = 0; b < jumlahsimpul; b++)
+        {
+            cout << setw(12) << matriks[a][b];
+        }
+        cout << endl;
+    }
+}
 
 ```
 ## [Output Program 1 ]
 
+![output 1](https://github.com/arvelmahsa/Struktur-Data-Assignment/assets/161669026/596658a6-6517-4ae9-b9ff-2a4a5fbbbc5a)
+
 ## [Source Code 2]
 ```C++
+
+
 
 ```
 ## [Output Program 2]
